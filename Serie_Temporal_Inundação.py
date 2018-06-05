@@ -11,9 +11,11 @@ Geom = r"C:\Users\Edson\Documents\MEGAsync\ser\ser300\proj_geoprocessamento\lago
 DateStart = (2003, 1, 1)  # Data inicial a série temporal
 DateEnd = (2003, 3, 30)  # Data final da série temporal
 ResTemp = 10  # Resolução temporal da série temporal (dias para fazer o mosaico)
-Escala = 250  # Escala dos cálculos
-Proj = 'EPSG:4326'
-SaveImg = True
+Escala = 500  # Escala dos cálculos
+Proj = 'EPSG:4326' #  Projeção para salvar e cálculas as áreas
+SaveImg = False
+
+# ------------- fim do input ----------
 
 # 2 - Gera variaveis secundarias e funções para o processamento
 
