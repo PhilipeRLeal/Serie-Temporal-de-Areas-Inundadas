@@ -3,17 +3,19 @@ import ee
 import datetime as dt
 import pandas as pd
 import fiona
-
+import os
 ee.Initialize()
 
 # 1 - input dos dados
+os.chdir(r'C:\Users\Edson\Documents\GitHub\Séries_Temporais_de_Áreas_Inundadas\Serie-Temporal-de-Areas-Inundadas') #  Dire
+#tório para salvar o DataFrame
 Geom = r"C:\Users\Edson\Documents\MEGAsync\ser\ser300\proj_geoprocessamento\lago.shp"  # Poligono da área a ser analisada
 DateStart = (2003, 1, 1)  # Data inicial a série temporal
 DateEnd = (2003, 3, 30)  # Data final da série temporal
 ResTemp = 10  # Resolução temporal da série temporal (dias para fazer o mosaico)
 Escala = 500  # Escala dos cálculos
 Proj = 'EPSG:4326' #  Projeção para salvar e cálculas as áreas
-SaveImg = False
+SaveImg = True
 
 # ------------- fim do input ----------
 
